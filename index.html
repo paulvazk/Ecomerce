@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="css/fontawesome-all.min.css">
+     <link rel="stylesheet" href="carrusel.css">
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="render()">
+     <header>
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary text-white"> 
+               <a href="" class="text-white navbar-brand">
+                    Akela     
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigator">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto menu">
+                         <li class="nav-item active">
+                              <a class="nav-link" href="#">Inicio</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#piezas">Piezas</a>
+                         </li>
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0">
+                         <a class="text-white nav-link" href="cart.html">
+                              <i class="text-warninng fas-fa-shopping-cart"></i>
+                              Carrito de compras <i style="color:yellow;" id="cart_n"></i>
+                         </a>
+                         <a class="nav-link text-white" href="admin/login.html">
+                              <i class="far fa-user"></i> Administrador
+                         </a>
+                    </form>
+               </div>
+          </nav>
+     </header>
+
+     <main role="main">
+
+          <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+               <ol class="carousel-indicators">
+                    <li style="z-index: 102;" data-target="#myCarousel" data-slide-to="0" class="active">
+          
+                    </li>
+                    <li style="z-index: 102;" data-target="#myCarousel" data-slide-to="1" >
+          
+                    </li>
+                    <li style="z-index: 102;" data-target="#myCarousel" data-slide-to="2" >
+          
+                    </li>
+               </ol>
+               <div class="carousel-inner">
+                    <div class="carousel-item active">
+                         <img class="imgFilter first-slide "src="img/carrusel/18.jpeg" alt="Primer Slide">
+                         <div class="container">
+                              <div class="carousel-caption">
+                                   <h1>Akela Store</h1>
+                                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo saepe inventore repellat sapiente, modi quia possimus quasi totam. Quia sint enim dignissimos recusandae delectus eos adipisci! Libero in hic corrupti.</p>
+                                   <p>
+                                        <a role="button" class="btn btn-lg btn-primary" href="#">Ver Mas</a>
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="carousel-item">
+                         <img class="imgFilter second-slide "src="img/carrusel/12.jpeg" alt="Segundo Slide">
+                         <div class="container">
+                              <div class="carousel-caption text-left">
+                                   <h1>Akela Store</h1>
+                                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo saepe inventore repellat sapiente, modi quia possimus quasi totam. Quia sint enim dignissimos recusandae delectus eos adipisci! Libero in hic corrupti.</p>
+                                   <p>
+                                        <a role="button" class="btn btn-lg btn-primary" href="#">Ver Mas</a>
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="carousel-item">
+                         <img class="imgFilter third-slide "src="img/carrusel/19.jpeg" alt="Tercer Slide">
+                         <div class="container">
+                              <div class="carousel-caption text-right">
+                                   <h1>Akela Store</h1>
+                                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo saepe inventore repellat sapiente, modi quia possimus quasi totam. Quia sint enim dignissimos recusandae delectus eos adipisci! Libero in hic corrupti.</p>
+                                   <p>
+                                        <a role="button" class="btn btn-lg btn-primary" href="#">Ver Mas</a>
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <a style="z-index: 101;" class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>     
+                    <span class="sr-only">Previus</span>               
+               </a> 
+               <a style="z-index: 101;" class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>     
+                    <span class="sr-only">Next</span>               
+               </a>                 
+          </div>
+
+          <div class="container marketing">
+               <br>
+               <h2 id="piezas">Piezas</h2>
+               <hr>
+               <div class="row" id="piezasDiv"></div>
+
+               <hr class="featurette-divider">
+
+               <br>
+               <h2 id="otra">Otro</h2>
+               <hr>
+               <div class="row" id="otraDiv"></div>
+
+               <hr class="featurette-divider">
+               
+               <br>
+               <h2 id="nose">No se</h2>
+               <hr>
+               <div class="row" id="noseDiv"></div>
+               <hr class="featurette-divider">
+
+
+          </div>
+          <footer class="container">
+               <p class="float-right">
+                    <a href=""></a>
+               </p>
+               <div class="row">
+                    Copyright Akela Todos Los Derechos Reservados 2020
+                    Hecho Por @paulvazk
+               </div>
+          </footer>
+
+     </main>
+
+
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <!-- Importar JS de Firebase -->
+     <!-- Importar Popper -->
+     <!-- Importar sweetalert2 -->
+     
+     <script src="main.js"></script>
+</body>
+</html>

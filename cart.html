@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="css/fontawesome-all.min.css">
+</head>
+<body onload="render()">
+     <header>
+          <nav class="navbar navbar-dark navbar-expand-md bg-primary text-white">
+               <a href="" class="text-white navbar-brand">
+                    Akela     
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigator">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto menu">
+                         <li class="nav-item active">
+                              <a class="nav-link" href="./index.html">Inicio</a>
+                         </li>
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0">
+                         <a class="text-white nav-link" href="#">
+                              <i class="text-warninng fas-fa-shopping-cart"></i>
+                              Carrito de compras <i style="color:yellow;" id="cart_n"></i>
+                         </a>
+                         <a class="nav-link disabled text-white" href="admin/login.html">
+                              <i class="far fa-user"></i> Administrador
+                         </a>
+                    </form>
+               </div>
+          </nav>
+     </header>
+     <div class="container mt-3">
+          <main role="main">
+               <div class="row">
+                    <div class="col">
+                         <div class="table-responsive-sm">
+                              <table class="table">
+                                   <thead>
+                                        <tr>
+                                             <th scope="col">#</th>
+                                             <th scope="col">Producto</th>
+                                             <th scope="col">Descripcion</th>
+                                             <th scope="col">Cantidad</th>
+                                             <th scope="col">Precio</th>
+                                        </tr>
+                                   </thead>
+                                   <tbody id="table">
+                                        <tr>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                        </tr>
+                                   </tbody>
+                              </table>
+                         </div>
+                    </div>
+               </div>
+               <hr class="featurette-divider">
+          </main>
+     </div>
+     <footer class="container">
+          <p class="float-right">
+               <a href=""></a>
+          </p>
+          <div class="row">
+               Copyright Akela Todos Los Derechos Reservados 2020
+               Hecho Por @paulvazk
+          </div>
+     </footer>
+
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <!-- Importar JS de Firebase -->
+     <!-- Importar sweetalert2 -->
+     
+     <script src="cart.js"></script>
+</body>
+</html>

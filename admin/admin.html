@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="../css/bootstrap.css">
+     <link rel="stylesheet" href="../css/fontawesome-all.min.css">
+
+</head>
+<body onload="renderTable()">
+     <nav class="navbar navbar-expand-md navbar-dark bg-primary text-white"> 
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigator">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto menu">
+                         <li class="nav-item active">
+                              <a class="nav-link" href="#">Ordenes</a>
+                         </li>
+                         <li class="nav-item active">
+                              <a class="nav-link" href="order.html">Editar Ordenes</a>
+                         </li> 
+                         <li class="nav-item active">
+                              <a target="_blank" class="nav-link" href="../index.html">Sitio Web</a>
+                         </li>
+                         <li class="nav-item active">
+                              <a target="_blank" class="nav-link" href="../cart.html">Shopping Cart</a>
+                         </li>
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0">
+                         <a class="text-white nav-link" href="../index.html">
+                              Cerrar Sesion
+                         </a>
+                    </form>
+               </div>
+     </nav>
+     <div class="container">
+          <div class="container mt-4">
+               <main role="main">
+                    <div class="row">
+                         <div class="col">
+                              <h1>Ordenes</h1>
+                              <div class="table-responsive-sm">
+                                   <table id="table" class="table table-hover">
+                                        <thead>
+                                             <tr>
+                                                  <th scope="col">ID</th>
+                                                  <th scope="col">Pedidos</th>
+                                                  <th scope="col">Total</th>
+                                             </tr>
+                                        </thead>
+                                        <tbody id="table">
+                                        </tbody>
+                                   </table>
+                              </div>
+                         </div>
+                    </div>
+               </main>
+               <hr class="featurette-divider">
+          </div>
+     </div>
+     <footer class="container">
+          <p class="float-right">
+               <a href=""></a>
+          </p>
+          <div class="row">
+               Copyright Akela Todos Los Derechos Reservados 2020
+               Hecho Por @paulvazk
+          </div>
+     </footer>
+
+     <script src="../js/jquery.js"></script>
+     <script src="../js/bootstrap.min.js"></script>
+     <!-- Importar JS de Firebase -->
+     <!-- Importar Popper -->
+     <!-- Importar sweetalert2 -->
+     <script src="admin.js"></script>
+</body>
+</html>
